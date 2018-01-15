@@ -1,0 +1,108 @@
+{
+    "homeIcon": [
+        {
+            "icon": "#icon-hanbao",
+            "name": "汉堡"
+        },
+        {
+            "icon": "#icon-xuegao",
+            "name": "雪糕"
+        },
+        {
+            "icon": "#icon-juzi",
+            "name": "橘子"
+        },
+        {
+            "icon": "#icon-jidan",
+            "name": "鸡蛋"
+        },
+        {
+            "icon": "#icon-luchuan",
+            "name": "撸串"
+        },
+        {
+            "icon": "#icon-pisa",
+            "name": "披萨"
+        },
+        {
+            "icon": "#icon-mifan",
+            "name": "米饭"
+        },
+        {
+            "icon": "#icon-mangguo",
+            "name": "芒果"
+        }
+    ],
+    "itemInfo": [
+        {   
+            "id": "1",
+            "title": "去的的的人",
+            "detail": "能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？",
+            "imgUrl": "http://localhost:8082/static/img/jinron.jpg",
+            "starNamber": 4
+        },
+        {
+            "id": "2",
+            "title": "稍等的的",
+            "detail": "能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？",
+            "imgUrl": "http://localhost:8082/static/img/dashuju.jpg",
+            "starNamber": 3
+        },
+        {
+            "id": "3",
+            "title": "个个个个",
+            "detail": "能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？",
+            "imgUrl": "http://localhost:8082/static/img/yewu.jpg",
+            "starNamber": 5
+        },
+        {
+            "id": "4",
+            "title": "幸福",
+            "detail": "能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？",
+            "imgUrl": "http://localhost:8082/static/img/jushu.jpg",
+            "starNamber": 4
+        },
+        {
+            "id": "5",
+            "title": "幸福",
+            "detail": "能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？",
+            "imgUrl": "http://localhost:8082/static/img/jinron.jpg",
+            "starNamber": 3
+        },
+        {
+            "id": "6",
+            "title": "幸福",
+            "detail": "能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？",
+            "imgUrl": "http://localhost:8082/static/img/jushu.jpg",
+            "starNamber": 4
+        },
+        {
+            "id": "7",
+            "title": "幸福",
+            "detail": "能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？",
+            "imgUrl": "http://localhost:8082/static/img/jinron.jpg",
+            "starNamber": 0
+        },
+        {
+            "id": "8",
+            "title": "幸福",
+            "detail": "能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？",
+            "imgUrl": "http://localhost:8082/static/img/jinron.jpg",
+            "starNamber": 1
+        },
+        {
+            "id": "9",
+            "title": "幸福",
+            "detail": "能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？",
+            "imgUrl": "http://localhost:8082/static/img/jushu.jpg",
+            "starNamber": 5
+        },
+        {
+            "id": "10",
+            "title": "幸福",
+            "detail": "能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？",
+            "imgUrl": "http://localhost:8082/static/img/jinron.jpg",
+            "starNamber": 4
+        }
+    ]
+}
