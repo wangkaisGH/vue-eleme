@@ -48,7 +48,7 @@ export default {
 
   },
   created () {
-    // console.log(this.$route.name)
+   
   },
   watch:{
 			'$route.name':function(val,old){
