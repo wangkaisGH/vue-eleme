@@ -15,6 +15,10 @@ Vue.prototype.$http = axios
 Vue.config.productionTip = false
 // Vue.use(ElementUI)
 /* eslint-disable no-new */
+Vue.filter('setStarNamber', function (input,namber) {
+  var rate = namber 
+  return '★★★★★☆☆☆☆☆'.slice(5 - rate, 10 - rate)
+})
 new Vue({
   el: '#app',
   router,

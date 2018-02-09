@@ -4,7 +4,7 @@ import Home from '../components/Home/home.vue'
 import Find from '../components/Find/find.vue'
 import Indent from '../components/Indent/indent.vue'
 import Mine from '../components/Mine/mine.vue'
-// import Home from '../components/home/home.vue'
+import ShopDetail from '../components/ProductList/shopDetail.vue'
 
 Vue.use(Router)
 
@@ -40,6 +40,6 @@ export default new Router({
   {
     path: '/shopDetail/:shopId',
     name: 'shopDetail',
-    component: Indent
+    component: ShopDetail
   }]
 })

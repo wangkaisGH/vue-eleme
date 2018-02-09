@@ -1,111 +1,149 @@
 <template>
   <div class="product-list">
-     <!-- 商品列表 -->
-    <ul class="mui-table-view">
-		<li class="mui-table-view-cell mui-media" v-for="(item) in itemInfo" :key="item.id" @click="getShopInfo(item.id)">
-			<a href="javascript:;">
-				<img class="mui-media-object mui-pull-left" :src="item.imgUrl">
-				<div class="mui-media-body">
-					{{item.title}}
-          <p> <span><i>{{item.starNamber|setStarNamber(item.starNamber)}}</i>{{item.starNamber}}&nbsp;&nbsp;&nbsp;月售1124单</span> <span class="zhushida">准时达</span> <span class="fengnaoda">蜂鸟专送</span></p>
-          <p> <span>￥20起送 &nbsp;| &nbsp;配送费￥20</span><span>4.2km&nbsp;| &nbsp;41分钟</span></p>
-				  <div class="line"></div>
-          <div>
-            <span class="te">特</span> 折扣商品
-          </div>
-          <div>
-            <span class="shou">首</span> 新用户下单立减17元
-          </div>
-           <!-- <div class="line"></div>
-           <p>
-             附近还有1家福兰酒家</p> -->
-				</div>
+    <headerCom></headerCom>
+    <h4 class="shop-name">阿上阿上麻辣烫（新建村店）</h4>
+     <p class="shop"> <span><i>{{"dddd"|setStarNamber("3")}}</i>&nbsp;&nbsp;&nbsp;月售1124单</span> <span class="zhushida">准时达</span> <span class="fengnaoda">蜂鸟专送</span></p>
+     <p> <span>￥20起送 &nbsp;| &nbsp;配送费￥20</span><span>4.2km&nbsp;| &nbsp;41分钟</span></p>
+     	<div class="mui-content">
+			<div id="slider" class="mui-slider">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item" href="#item1mobile">
+				点餐
 			</a>
-		</li>
-	</ul> 
+					<a class="mui-control-item" href="#item2mobile">
+				评价
+			</a>
+					<a class="mui-control-item" href="#item3mobile">
+				商家
+			</a>
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+                  	<div class=" mui-row mui-fullscreen">
+                      <div class="mui-col-xs-3">
+                        <div id="segmentedControls" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-vertical">
+                         <a class="mui-control-item" href="#content">选项1</a>
+                         <a class="mui-control-item" href="#content">选项2</a>
+                         <a class="mui-control-item" href="#content">选项3</a>
+                         <a class="mui-control-item" href="#content">选项4</a>
+                        </div>
+                      </div>
+                      <div id="segmentedControlContents" class="mui-col-xs-9" style="border-left: 1px solid #c8c7cc;">
+                        <div id="item1" class="mui-control-content mui-active">
+                          <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                          </ul>
+                        </div>
+                        <div id="item2" class="mui-control-content">
+                          <ul>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                          </ul>
+                        </div>
+                        <div id="item3" class="mui-control-content">
+                        </div>
+                      </div>
+                    </div>
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll2" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-loading">
+									<div class="mui-spinner">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div id="item3mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll3" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<div class="mui-loading">
+									<div class="mui-spinner">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
   </div>
 </template>
 <script>
-import Root from '../../../config/rootURL.js'
+import Root from "../../../config/rootURL.js";
+import headerCom from "../public/headerCom.vue";
 export default {
-  data () {
-      return {
-      id:this.$route.params.shopId,
-      }
-  }, 
-  created () {
-    this.getHomeIocon()
-  }, 
-  methods: {
-    
+  data() {
+    return {
+      id: this.$route.params.shopId
+    };
   },
+  created() {},
+  methods: {},
   props: {
-    type: String,
+    type: String
     // search: search
   },
-  filters:{
-     setStarNamber (input,namber) {
-      var rate = namber;  //评分
-      return "★★★★★☆☆☆☆☆".slice(5 - rate, 10 - rate);
-    }
+  filters: {},
+  components: {
+    headerCom
   }
-}
+};
 </script>
 
 <style scoped>
-.product-list>.mui-table-view{
-    padding-bottom: 55px;
-    padding-top: 10px;
-    border: none;
+html,body{
+  height: 100%;
 }
-.mui-media-body{
-  font-size: 15px;
-  font-weight: 900;
+.product-list {
+  text-align: center;
 }
-.mui-media-body p{
-  color: #696969;
-  font-size: 12px;
-  font-weight: 400;
-  display: flex;
-  justify-content: space-between
-}
-.mui-media-body p i{
-  color: #FEBE04;
-  font-style: normal;
-}
-.mui-media-body div{
-  font-size: 12px;
-   color: #696969;
-}
-.zhushida{
+.zhushida {
   height: 20px;
   line-height: 20px;
-  color: #06A0F8;
-  border: #06A0F8 solid 1px;
+  color: #06a0f8;
+  border: #06a0f8 solid 1px;
   border-radius: 3px;
   padding: 0px 2px;
 }
-.fengnaoda{
-  background-color: #06A0F8;
+.fengnaoda {
+  background-color: #06a0f8;
   color: white;
   border-radius: 3px;
   height: 20px;
   line-height: 20px;
-  padding: 0 2px
+  padding: 0 2px;
 }
-.line{
-  height: 1px;
-  background-color: #E7E7E7;
-  margin-top: 8px;
-  margin-bottom: 8px;
+p i {
+  color: #febe04;
+  font-style: normal;
 }
-.te,.shou{
-  background-color: #F5884F;
-  padding: 0 3px;
-  color:white;
-  border-radius: 2px;
+.shop-name {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
-.shou{
-  background-color: #78B95D;
+.mui-content .mui-row .mui-fullscreen{
+  height: 300px;
+}
+#scroll1{
+  height: 300px;
+}
+.mui-content{
+  height: 1000px
 }
 </style>
