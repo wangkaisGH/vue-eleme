@@ -24,6 +24,9 @@
             <div>
               <span class="shou">首</span> 新用户下单立减17元
             </div>
+            <!-- <div class="line"></div>
+           <p>
+             附近还有1家福兰酒家</p> -->
           </div>
         </a>
       </li>
